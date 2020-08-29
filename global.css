@@ -1,0 +1,23 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Cantarell, sans-serif;
+  background-color: #111;
+  color: #eee;
+}
+
+h1#title {
+  font-family: Audiowide, sans-serif;
+  text-align-last: center;
+  font-size: 44px;
+  padding: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
