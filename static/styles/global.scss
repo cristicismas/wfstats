@@ -7,11 +7,13 @@ body {
   color: #eee;
 }
 
-h1#title {
+#page-title {
   font-family: Audiowide, sans-serif;
+  background-color: rgb(16, 119, 214);
   text-align-last: center;
   font-size: 44px;
   padding: 20px;
+  margin-top: 0;
 }
 
 a {

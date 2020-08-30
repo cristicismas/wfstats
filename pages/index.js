@@ -10,7 +10,7 @@ const Root = () => {
         <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Cantarell:wght@400;700&display=swap" rel="stylesheet" /> 
       </Head>
 
-      <h1 id="title">WFSTATS</h1>
+      <h1 id="page-title">WFSTATS</h1>
 
       <OpenWorld />
     </div>
