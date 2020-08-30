@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import apiCall from 'utils/api';
-import styles from './OpenWorld.module.css';
 
 import EarthCycle from './cycles/EarthCycle';
 
@@ -23,10 +22,10 @@ const OpenWorldCycles = () => {
   const { earthCycle } = worldTimers;
 
   return (
-    <section id={styles.openWorld}>
-      <h2 className={styles.sectionTitle}>Open World Cycles</h2>
+    <section id="open-world">
+      <h2 className="section-title">Open World Cycles</h2>
 
-      <EarthCycle className={styles.planet} cycle={earthCycle} />
+      <EarthCycle cycle={earthCycle} />
     </section>
   );
 };

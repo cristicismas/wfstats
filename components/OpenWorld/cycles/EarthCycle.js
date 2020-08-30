@@ -1,16 +1,15 @@
 import React from 'react';
-import styles from './Cycle.module.css';
 
 const EarthCycle = ({ cycle={} }) => {
   return (
-    <div className={styles.world}>
-      <h3 className={styles.worldName}>Earth</h3>
+    <div className="world-cycle">
+      <h3 className="world-name">Earth</h3>
 
-      <h4 className={styles.currentState}>
+      <h4 className="current-state">
         It is currently: <div className="accent">{cycle.state}</div>
       </h4>
 
-      <h4 className={styles.timeLeft}>
+      <h4 className="time-left">
         Time until <div className="accent">{cycle.isDay ? 'night' : 'day'}</div>:{' '}
         <div className="accent">{cycle.timeLeft}</div>
       </h4>

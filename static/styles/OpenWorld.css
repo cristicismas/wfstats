@@ -1,4 +1,4 @@
-#openWorld {
+#open-world {
   width: 600px;
   margin: auto;
   background-color: #191919;
@@ -6,8 +6,20 @@
   text-align: center;
 }
 
-.sectionTitle {
+.section-title {
   font-size: 32px;
   color: rgb(0, 153, 255);
   margin-bottom: 70px;
+}
+
+.world-name {
+  margin-top: 45px;
+  font-size: 36px;
+  margin-bottom: 60px;
+}
+
+.current-state,
+.time-left {
+  font-size: 24px;
+  color: #ccc;
 }
