@@ -26,6 +26,11 @@
     position: absolute;
     left: 15px;
     top: 15px;
+    transition-duration: .2s;
+
+    &:hover {
+      background-color: #333;
+    }
 
     .sign {
       font-weight: bold;
@@ -61,6 +66,7 @@
 
     & > *:not(.section-title):not(.collapse-btn) {
       opacity: 0;
+      transform: translateY(-100px);
     }
 
     .section-title {
