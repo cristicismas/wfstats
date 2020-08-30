@@ -1,0 +1,11 @@
+.worldName {
+  margin-top: 45px;
+  font-size: 36px;
+  margin-bottom: 60px;
+}
+
+.currentState,
+.timeLeft {
+  font-size: 24px;
+  color: #ccc;
+}

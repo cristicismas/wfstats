@@ -1,6 +1,6 @@
 import Head from 'next/head';
 
-import OpenWorldCycles from '../components/OpenWorld/OpenWorldCycles';
+import OpenWorld from '../components/OpenWorld/OpenWorld';
 
 const Root = () => {
   return (
@@ -12,7 +12,7 @@ const Root = () => {
 
       <h1 id="title">WFSTATS</h1>
 
-      <OpenWorldCycles />
+      <OpenWorld />
     </div>
   )
 }
