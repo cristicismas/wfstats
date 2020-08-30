@@ -19,10 +19,26 @@ const OpenWorldCycles = () => {
     getWorldCycles().then(timers => setWorldTimers(timers));
   }, []);
 
+  const [isCollapsed, setIsCollapsed] = useState(false);
+
+  useEffect(() => {
+    let openWorldSection = document.getElementById('open-world');
+
+    if (isCollapsed) {
+      openWorldSection.classList.add('collapsed');
+    } else {
+      openWorldSection.classList.remove('collapsed');
+    }
+  }, [isCollapsed]);
+
   const { earthCycle } = worldTimers;
 
   return (
-    <section id="open-world">
+    <section id="open-world" onClick={() => (isCollapsed ? setIsCollapsed(!isCollapsed) : {})}>
+      <button className="collapse-btn" onClick={() => setIsCollapsed(!isCollapsed)}>
+        <span className="sign">{isCollapsed ? '+' : '‒'}</span>
+      </button>
+
       <h2 className="section-title">Open World Cycles</h2>
 
       <EarthCycle cycle={earthCycle} />
