@@ -1,14 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import apiCall from 'utils/api';
+import { getWorldCycles } from 'utils/cycles';
 
 import EarthCycle from './cycles/EarthCycle';
-
-const getWorldCycles = async () => {
-  let earthCycle = await apiCall('earthCycle');
-  let cetusCycle = await apiCall('cetusCycle');
-
-  return { earthCycle, cetusCycle };
-};
 
 const OpenWorldCycles = () => {
   const [worldTimers, setWorldTimers] = useState({
