@@ -18,6 +18,10 @@ a {
   text-decoration: none;
 }
 
+button:active {
+  padding: 0;
+}
+
 .accent {
   color: rgb(0, 153, 255);
   display: inline;
