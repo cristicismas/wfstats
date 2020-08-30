@@ -18,6 +18,11 @@ a {
   text-decoration: none;
 }
 
+.accent {
+  color: rgb(0, 153, 255);
+  display: inline;
+}
+
 * {
   box-sizing: border-box;
 }
