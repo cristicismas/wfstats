@@ -1,12 +1,23 @@
 #open-world {
-  width: 600px;
-  max-height: 415px;
-  margin: auto;
+  width: auto;
+  margin: 100px;
+  max-height: 100vh;
   background-color: #191919;
-  padding: 25px 50px;
+  padding: 25px 50px 75px;
   text-align: center;
   position: relative;
   overflow: hidden;
+
+  .cycles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .cycles > .world-cycle {
+    margin: 20px 50px;
+    border-bottom: 1px solid rgb(0, 153, 255);
+  }
 
   &,
   & > * {
@@ -44,7 +55,7 @@
   .section-title {
     font-size: 32px;
     color: rgb(0, 153, 255);
-    margin-bottom: 70px;
+    margin-bottom: 20px;
     position: relative;
   }
 

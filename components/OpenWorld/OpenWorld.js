@@ -1,15 +1,18 @@
 import React, { useState, useEffect } from 'react';
-import { getWorldCycles } from 'utils/cycles';
+import { getWorldStates } from 'utils/cycles';
 
-import EarthCycle from './cycles/EarthCycle';
+import WorldCycle from './WorldCycle';
 
 const OpenWorldCycles = () => {
-  const [worldTimers, setWorldTimers] = useState({
-    earthCycle: {}
-  });
+  const [worldStates, setWorldStates] = useState([]);
 
   useEffect(() => {
-    getWorldCycles().then(timers => setWorldTimers(timers));
+    let getAndSetWorldStates = async () => {
+      let states = await getWorldStates();
+      setWorldStates(states);
+    }
+    
+    getAndSetWorldStates();
   }, []);
 
   const [isCollapsed, setIsCollapsed] = useState(false);
@@ -24,8 +27,6 @@ const OpenWorldCycles = () => {
     }
   }, [isCollapsed]);
 
-  const { earthCycle } = worldTimers;
-
   return (
     <section id="open-world" onClick={() => (isCollapsed ? setIsCollapsed(!isCollapsed) : {})}>
       <button className="collapse-btn" onClick={() => setIsCollapsed(!isCollapsed)}>
@@ -34,7 +35,11 @@ const OpenWorldCycles = () => {
 
       <h2 className="section-title">Open World Cycles</h2>
 
-      <EarthCycle cycle={earthCycle} />
+      <div className="cycles">
+        {worldStates.map(world => 
+          <WorldCycle key={world.name} world={world} />
+        )}
+      </div>
     </section>
   );
 };
