@@ -1,0 +1,47 @@
+.world-cycle {
+  border-bottom: 3px solid;
+  margin: 20px 50px;
+  padding: 0 20px;
+  transition: all .1s;
+  min-width: 370px;
+
+  &:hover {
+    background-color: #222;
+  }
+
+  &.earth {
+    border-bottom-color: rgb(11, 182, 76);
+
+    .accent,
+    .world-name {
+      color: rgb(11, 182, 76);
+    }
+  }
+
+  &.cetus {
+    border-bottom-color: rgb(0, 153, 255);
+
+    .accent,
+    .world-name {
+      color: rgb(0, 153, 255);
+    }
+  } 
+
+  &.vallis {
+    border-bottom-color: rgb(131, 68, 231);
+    
+    .accent,
+    .world-name {
+      color: rgb(131, 68, 231);
+    }
+  } 
+
+  &.cambion {
+    border-bottom-color: rgb(200, 26, 113);
+    
+    .accent,
+    .world-name {
+      color: rgb(200, 26, 113);
+    }
+  }
+}

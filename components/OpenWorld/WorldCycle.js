@@ -13,7 +13,7 @@ const WorldCycle = ({ world={} }) => {
   }
 
   return (
-    <div className="world-cycle">
+    <div className={`world-cycle ${world.name}`}>
       <h3 className="world-name">{capitalize(world.name)}</h3>
 
       <h4 className="current-state">

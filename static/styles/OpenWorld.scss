@@ -1,7 +1,7 @@
 #open-world {
   width: auto;
   margin: 100px;
-  max-height: 100vh;
+  max-height: 1530px;
   background-color: #191919;
   padding: 25px 50px 75px;
   text-align: center;
@@ -12,11 +12,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-  }
-
-  .cycles > .world-cycle {
-    margin: 20px 50px;
-    border-bottom: 1px solid rgb(0, 153, 255);
   }
 
   &,
@@ -81,7 +76,7 @@
     }
 
     .section-title {
-      transform: translateY(-45px);
+      transform: translateY(-30px);
     }
   }
 }
