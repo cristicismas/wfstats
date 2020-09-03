@@ -17,14 +17,14 @@ const formatWorldStates = async () => {
 
 
   return worldCycles.map((cycle, index) => {
-    const world = Object.keys(WORLDS)[index];
+    const worldName = Object.keys(WORLDS)[index];
 
-    let timeLeft = world === 'cambion' ? getCambionTime(cycle)  : cycle.timeLeft;
+    let timeLeft = worldName === 'cambion' ? getCambionTime(cycle)  : cycle.timeLeft;
 
-    const currentState = world === 'cambion' ? cycle.active : cycle.state;
+    const currentState = worldName === 'cambion' ? cycle.active : cycle.state;
 
     return {
-      name: world,
+      name: worldName,
       state: currentState,
       timeLeft
     }
