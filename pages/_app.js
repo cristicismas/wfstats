@@ -1,6 +1,6 @@
-import 'static/styles/global.scss';
-import 'static/styles/OpenWorld.scss';
-import 'static/styles/WorldCycle.scss';
+import 'styles/global.scss';
+import 'styles/OpenWorld.scss';
+import 'styles/WorldCycle.scss';
 
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />;
